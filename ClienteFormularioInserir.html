@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <title>APP ACADEMIA</title>
+</head>
+
+<BODY>
+
+  <div class="boxMain">
+
+    <div class="boxMenu">
+      <nav>
+        <li><a href="index.html">INÍCIO</a></li>
+      </nav>
+      <nav>
+        <li><a href="ClienteSelect.php">CLIENTES CADASTRADOS</a></li>
+      </nav>
+    </div>
+
+    <div class="boxTitulo">
+      <h1>CADASTRO DE CLIENTES</h1>
+    </div>
+
+    <div class="boxEdit">
+      <form action="_insert.php" method="post">
+
+        <input type=hidden name=tabela value="clientes">
+
+        <b> Nome:</b> <input type="text" name="input_nome" size="30" required>
+        <br><br>
+
+        <b> Data Nascimento:</b> <input type="date" name="input_dataNascimento" size="12" required>
+        <br><br>
+
+        <b> Email:</b> <input type="text" name="input_email" size="30" required>
+        <br><br>
+
+        <b> Telefone:</b> <input type="text" name="input_telefone" size="12" required>
+        <br><br><br>
+
+        <input class="botao" type="reset" value="Reset"> <input class="botao" type="submit" value="Cadastrar">        
+
+      </form>
+
+    </div>
+
+  </div>
+  
+</BODY>
+
+</HTML>

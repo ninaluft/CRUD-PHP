@@ -1,0 +1,29 @@
+create table Clientes(
+	codCliente integer AUTO_INCREMENT,
+	nome varchar(50) not null,
+	dataNascimento varchar(10) not null,
+	email varchar(50),
+	telefone varchar(20),
+	primary key(codCliente)	
+);
+
+create table Funcionarios(
+	codFuncionario integer AUTO_INCREMENT,
+	nome varchar(50) not null,
+	dataNascimento varchar(10) not null,
+	email varchar(50),
+	telefone varchar(20),
+	salario decimal,
+	primary key(codFuncionario)
+);
+
+create table Servicos(
+	codServico integer AUTO_INCREMENT,
+	nome varchar(50) not null,
+	mensalidade decimal not null,
+	codCliente integer not null,
+	codFuncionario integer not null,
+	primary key(codServico),
+	FOREIGN KEY (codCliente) REFERENCES Clientes(codCliente),
+	FOREIGN KEY (codFuncionario) REFERENCES Funcionarios(codFuncionario) 
+); 

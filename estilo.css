@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background:  rgb(20, 147, 220);
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 2em;
+
+}
+
+.boxMain{
+  background-color: rgba(51, 44, 44, 0.6);
+  border-radius: 15px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  overflow-x: auto;
+}
+
+.boxMenu {
+  padding: 1em;
+  background-color: rgba(51, 44, 44, 0.6);
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.boxTitulo {
+  background-color: rgba(51, 44, 44, 0.6);
+
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+}
+
+.boxEdit {
+
+  padding: 30px;
+  border-radius: 15px;
+  text-align: left;
+  width: 320px;
+  margin: auto;
+}
+
+.boxPaginaInicial {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  margin: auto;
+  margin-top: 180px;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+
+a:hover {
+  background-color: rgba(186, 188, 194, 0.6);
+}
+
+table {
+
+  background-color: rgba(51, 44, 44, 0.6);
+  margin: auto;  
+  border-radius: 15px;
+}
+
+th,td {
+  padding: 10px;
+  word-wrap: break-word;
+}
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
